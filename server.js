@@ -15,7 +15,7 @@ app.set('view engine', 'ejs')
 
 
 // Mount Middleware (app.use)
-
+app.use(express.static('css'))
 
 
 // Mount routes
