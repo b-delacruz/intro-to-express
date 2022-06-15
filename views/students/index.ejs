@@ -11,15 +11,6 @@
 <body>
   <h1 id="students">Students</h1>
 
-  <ul class="list-group">
-    <% students.forEach(students => { %>
-    <li class="list-group-item">  <%- students.name %> </li>
-    <li class="list-group-item"> <%- students.grade %> </li>
-    <li class="list-group-item"> GPA: <%= students.gpa %> </li>
-      <% }) %>  
-  </ul>
-
-
   <ol class="list-group list-group-numbered">
     <% students.forEach(students => { %>
     <li class="list-group-item d-flex justify-content-between align-items-start">
