@@ -16,8 +16,21 @@
     <li class="list-group-item">  <%- students.name %> </li>
     <li class="list-group-item"> <%- students.grade %> </li>
     <li class="list-group-item"> GPA: <%= students.gpa %> </li>
-  </ul>
       <% }) %>  
   </ul>
+
+
+  <ol class="list-group list-group-numbered">
+    <% students.forEach(students => { %>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold"> <%- students.name %> </div>
+        GPA: <%= students.gpa %> 
+      </div>
+      <span class="badge bg-primary rounded-pill">Grade: <%- students.grade %></span>
+    </li>
+    <% }) %>  
+  </ol>
+  
 </body>
 </html>
